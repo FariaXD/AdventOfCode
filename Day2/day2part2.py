@@ -5,7 +5,7 @@ games_list = ["Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green","Game 2: 
 "Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green"]
 
 lines = []
-with open('Day2/input2.txt', 'r') as file:
+with open('Day2/input.txt', 'r') as file:
     lines = file.read().splitlines()
 
 power_game = []

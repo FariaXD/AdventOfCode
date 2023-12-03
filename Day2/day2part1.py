@@ -5,7 +5,7 @@
 "Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green"]
 
 lines = []
-with open('Day2/input1.txt', 'r') as file:
+with open('Day2/input.txt', 'r') as file:
     lines = file.read().splitlines()
 
 red_cubes = 12
