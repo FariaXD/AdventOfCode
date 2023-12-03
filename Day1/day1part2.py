@@ -1,4 +1,9 @@
 ﻿import re
+
+lines = []
+with open('Day1/input.txt', 'r') as file:
+    lines = file.read().splitlines()
+
 input = ["two1nine",
 "eightwothree",
 "abcone2threexyz",
@@ -40,7 +45,7 @@ def replace_words_with_numbers(input_string):
     
 
 
-i = [replace_words_with_numbers(i) for i in input]
+i = [replace_words_with_numbers(i) for i in lines]
 o = [num[0] + num[-1] if len(num) > 1 else num * 2 for num in i]
 result = sum(map(int, o))
 print(result)
